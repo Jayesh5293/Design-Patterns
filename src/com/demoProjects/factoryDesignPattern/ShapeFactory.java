@@ -1,12 +1,13 @@
+package com.demoProjects.factoryDesignPattern;
 
 public class ShapeFactory {
     public Shape getShape(String shapeName) {
         switch (shapeName) {
-            case "Circle" :
+            case "FactoryDesignPattern.Circle" :
                 return new Circle();
-            case "Rectangle" :
+            case "FactoryDesignPattern.Rectangle" :
                 return new Rectangle();
-            case "Square" :
+            case "FactoryDesignPattern.Square" :
                 return new Square();
         }
         return null;
